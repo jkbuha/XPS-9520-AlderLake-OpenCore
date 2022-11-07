@@ -5,7 +5,7 @@
 | OpenCore Version | 0.8.2 |
 | --- | --- |
 | macOS Version | 12.6.1 (Monterey) |
-| SMSBios | MacBookAir16,4 |
+| SMSBios | MacBookPro16,4 |
 
 # Hardware Specifications
 
@@ -16,7 +16,7 @@
 | Audio | Realtek ALC3281 | ✅ Working |
 | WiFi | Killer 1675 (AX211) | ✅ Working |
 | Bluetooth | - | ✅ Working |
-| SSD | WD SN850 | ✅ Working |
+| SSD | Crucial P5 2TB | ✅ Working |
 | Keyboard | - | ✅ Working |
 | Trackpad | I2C Connection | ✅ Working |
 | Webcam | - | ❌ Not Working |
@@ -34,8 +34,9 @@ possible to install and run MacOS Monterey without graphics acceleration
 
 # BIOS Settings
 
-| SATA Operation | AHI |
+| Setting | Option |
 | --- | --- |
+| SATA Operation | AHCI |
 | Fast Boot | Thorough |
 | Secure Boot | Disabled |
 | TMP 2.0 Security | Disabled |
@@ -45,9 +46,11 @@ possible to install and run MacOS Monterey without graphics acceleration
 
 # UEFI IFR edits
 Ahead of installing, as with other hackintoshes you will need to disable 
-CFG_LOCK using modgrubshellEFI as follows:
+CFG_LOCK using modGRUBshell as follows:
 
-'setup_var_cv CpuSetup 0x43 0x01 0x00'
+```bash
+setup_var_cv CpuSetup 0x43 0x01 0x00
+```
 
 # Known Issues
 
