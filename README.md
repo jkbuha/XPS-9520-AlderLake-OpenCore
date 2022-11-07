@@ -1,5 +1,7 @@
 # Dell XPS 9520 macOS Monterey with OpenCore
 
+![hackintosh](./screenshot/screen.jpg)
+
 # Details
 
 | OpenCore Version | 0.8.2 |
