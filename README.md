@@ -4,7 +4,7 @@
 
 # Details
 
-| OpenCore Version | 0.8.2 |
+| OpenCore Version | 0.8.5 |
 | --- | --- |
 | macOS Version | 12.6.1 (Monterey) |
 | SMSBios | MacBookPro16,4 |
