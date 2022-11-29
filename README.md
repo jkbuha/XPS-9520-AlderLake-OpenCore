@@ -26,13 +26,14 @@
 | Fingerprint Sensor | Goodfix | ❌ Not Working |
 | S3 | Sleep/Wake | ❌ Not Working |
 | GPU | Intel Iris Xe Graphics | ❌ Not Working |
+| eGPU | AMD Sapphire Radeon RX580 | ✅ Working |
 | Display | 1920 x 1200 FHD LCD | ✅ Working |
 
 # Overview
 
 This is mostly a work in progress. With this latest configuration it is 
 possible to install and run MacOS Monterey without graphics acceleration 
-(yet!).
+(yet!) but it will run smoothly with any eGPU (tested with an RX580).
 
 # BIOS Settings
 
@@ -58,5 +59,4 @@ setup_var_cv CpuSetup 0x43 0x01 0x00
 
 - S3 Sleep not working
 - Sleep/Wake not working
-- Graphics Acceleration not working
 
