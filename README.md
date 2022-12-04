@@ -20,7 +20,7 @@
 | Bluetooth | - | ✅ Working |
 | SSD | Crucial P5 2TB | ✅ Working |
 | Keyboard | - | ✅ Working |
-| Trackpad | I2C Connection | ✅ Working |
+| Trackpad | I2C Connection | ❌ Not Working |
 | Webcam | - | ❌ Not Working |
 | MicroSD Card | - |  ❌ Not Working |
 | Fingerprint Sensor | Goodfix | ❌ Not Working |
