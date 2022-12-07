@@ -5,13 +5,13 @@
  * 
  * Disassembling to symbolic ASL+ operators
  *
- * Disassembly of iASLK9ZsIq.aml, Sun Dec  4 10:00:28 2022
+ * Disassembly of iASLcajsqg.aml, Tue Dec  6 18:18:06 2022
  *
  * Original Table Header:
  *     Signature        "SSDT"
- *     Length           0x000003B6 (950)
+ *     Length           0x00000398 (920)
  *     Revision         0x02
- *     Checksum         0x2E
+ *     Checksum         0x9B
  *     OEM ID           "HACK"
  *     OEM Table ID     "I2C"
  *     OEM Revision     0x00000000 (0)
@@ -28,8 +28,8 @@ DefinitionBlock ("", "SSDT", 2, "HACK", "I2C", 0x00000000)
     External (_SB_.PC00.I2C1, DeviceObj)
     External (_SB_.PC00.I2C1.I2CX, IntObj)
     External (_SB_.PC00.I2C1.TPD1, DeviceObj)
-    External (_SB_.PC00.I2CM, MethodObj)    // 3 Arguments
     External (_SB_.PC00.TP7D, MethodObj)    // 6 Arguments
+    External (_SB_.PC00.I2CM, MethodObj)    // 6 Arguments    
     External (_SB_.PC00.TP7G, BuffObj)
     External (_SB_.SHPO, MethodObj)    // 2 Arguments
     External (EV12, MethodObj)    // 2 Arguments
@@ -69,7 +69,7 @@ DefinitionBlock ("", "SSDT", 2, "HACK", "I2C", 0x00000000)
             {
                 I2cSerialBusV2 (0x002C, ControllerInitiated, 0x00061A80,
                     AddressingMode7Bit, "\\_SB.PC00.I2C1",
-                    0x00, ResourceConsumer, _Y00, Exclusive,
+                    0x00, ResourceConsumer, _Y58, Exclusive,
                     )
             })
             Name (SBFG, ResourceTemplate ()
@@ -83,15 +83,15 @@ DefinitionBlock ("", "SSDT", 2, "HACK", "I2C", 0x00000000)
             })
             Name (SBFI, ResourceTemplate ()
             {
-                Interrupt (ResourceConsumer, Level, ActiveLow, ExclusiveAndWake, ,, _Y01)
+                Interrupt (ResourceConsumer, Level, ActiveLow, ExclusiveAndWake, ,, _Y59)
                 {
                     0x00000000,
                 }
             })
-            CreateWordField (SBFB, \_SB.PC00.I2C1.TPD1._Y00._ADR, BADR)  // _ADR: Address
-            CreateDWordField (SBFB, \_SB.PC00.I2C1.TPD1._Y00._SPE, SPED)  // _SPE: Speed
+            CreateWordField (SBFB, \_SB.PC00.I2C1.TPD1._Y58._ADR, BADR)  // _ADR: Address
+            CreateDWordField (SBFB, \_SB.PC00.I2C1.TPD1._Y58._SPE, SPED)  // _SPE: Speed
             CreateWordField (SBFG, 0x17, INT1)
-            CreateDWordField (SBFI, \_SB.PC00.I2C1.TPD1._Y01._INT, INT2)  // _INT: Interrupts
+            CreateDWordField (SBFI, \_SB.PC00.I2C1.TPD1._Y59._INT, INT2)  // _INT: Interrupts
             Method (_INI, 0, NotSerialized)  // _INI: Initialize
             {
                 If (CondRefOf (TPHD)){}

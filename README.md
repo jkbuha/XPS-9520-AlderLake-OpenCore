@@ -21,10 +21,10 @@
 | SSD | Crucial P5 2TB | ✅ Working |
 | Keyboard | - | ✅ Working |
 | Trackpad | I2C Connection | ❌ Not Working |
-| Webcam | - | ❌ Not Working |
-| MicroSD Card | - |  ❌ Not Working |
-| Fingerprint Sensor | Goodfix | ❌ Not Working |
-| S3 | Sleep/Wake | ❌ Not Working |
+| Webcam | - | ✅ Working |
+| MicroSD Card | - | 🔶 Partially working |
+| Fingerprint Sensor | Goodfix | 🔶 Partially working |
+| S3 | Sleep/Wake | 🔶 Partially working |
 | GPU | Intel Iris Xe Graphics | ❌ Not Working |
 | eGPU | AMD Sapphire Radeon RX580 | ✅ Working |
 | Display | 1920 x 1200 FHD LCD | ✅ Working |
@@ -52,11 +52,25 @@ Ahead of installing, as with other hackintoshes you will need to disable
 CFG_LOCK using modGRUBshell as follows:
 
 ```bash
-setup_var_cv CpuSetup 0x43 0x01 0x00
+setup_var_cv CpuSetup 0x43 0x00
 ```
+
+# S3 ACPI
+Despite Dell's attempts to remove S3 from the sleep options, it's possible, in theory at least, to get S3 working using a combination of IFR edits 
+and ACPI table changes. The first step is to re-enable S3 from the UEFI interface using modGRUBshell:
+
+```bash
+setup_var_cv Setup 0xE 0x01
+```
+
+S3 will be present in the macOS boot-up sequence, and will go to sleep but will crash upon startup. ACPI table edits to restore post-S3 sleep states 
+are required, and this is currently WIP.
+
 
 # Known Issues
 
-- S3 Sleep not working
-- Sleep/Wake not working
+- S3 Sleep not working properly yet
+- Wake not working
+- I2C interface not enabled yet
+- LVDS display remains on/inactive when eGPU connected
 
