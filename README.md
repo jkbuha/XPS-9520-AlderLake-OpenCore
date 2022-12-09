@@ -17,7 +17,7 @@
 | RAM | DDR5 64GB | ✅ Working |
 | Audio | Realtek ALC3281 | ✅ Working |
 | WiFi | Killer 1675 (AX211) | ✅ Working |
-| Bluetooth | - | ✅ Working |
+| Bluetooth | AX211 Wi-Fi 5 | ✅ Working |
 | SSD | Crucial P5 2TB | ✅ Working |
 | Keyboard | - | ✅ Working |
 | Trackpad | I2C Connection | ✅ Working |
