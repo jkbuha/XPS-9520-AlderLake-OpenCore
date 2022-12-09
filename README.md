@@ -21,9 +21,9 @@
 | SSD | Crucial P5 2TB | ✅ Working |
 | Keyboard | - | ✅ Working |
 | Trackpad | I2C Connection | ✅ Working |
-| Webcam | - | ✅ Working |
-| MicroSD Card | - | 🔶 Partially working |
-| Fingerprint Sensor | Goodfix | 🔶 Partially working |
+| Webcam | Microdia RGB IR HD camera | ✅ Working |
+| MicroSD Card | RTS5260 Card Reader | 🔶 Partially working |
+| Fingerprint Sensor | Shenzen Goodix | 🔶 Partially working |
 | S3 | Sleep/Wake | 🔶 Partially working |
 | GPU | Intel Iris Xe Graphics | ❌ Not Working |
 | eGPU | AMD Sapphire Radeon RX580 | ✅ Working |
