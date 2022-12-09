@@ -105,6 +105,19 @@
 			<key>IOProviderClass</key>
 			<string>IOService</string>
 		</dict>
+		<key>VoodooGPIOAlderLakeLP</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>org.coolstar.VoodooGPIO</string>
+			<key>IOClass</key>
+			<string>VoodooGPIOAlderLakeLP</string>
+			<key>IONameMatch</key>
+			<array>
+				<string>INTC1055</string>
+			</array>
+			<key>IOProviderClass</key>
+			<string>IOService</string>
+		</dict>
 	</dict>
 	<key>LSMinimumSystemVersion</key>
 	<string>10.12</string>

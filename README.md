@@ -20,7 +20,7 @@
 | Bluetooth | - | ✅ Working |
 | SSD | Crucial P5 2TB | ✅ Working |
 | Keyboard | - | ✅ Working |
-| Trackpad | I2C Connection | ❌ Not Working |
+| Trackpad | I2C Connection | ✅ Working |
 | Webcam | - | ✅ Working |
 | MicroSD Card | - | 🔶 Partially working |
 | Fingerprint Sensor | Goodfix | 🔶 Partially working |
@@ -71,6 +71,5 @@ are required, and this is currently WIP.
 
 - S3 Sleep not working properly yet
 - Wake not working
-- I2C interface not enabled yet
 - LVDS display remains on/inactive when eGPU connected
 
