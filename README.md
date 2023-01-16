@@ -71,5 +71,11 @@ are required, and this is currently WIP.
 
 - S3 Sleep not working properly yet
 - Wake not working
-- LVDS display remains on/inactive when eGPU connected
+- LVDS display remains off when eGPU connected
+
+To allow the laptop to function in clamshell mode, you need to press Fn+F8 
+on the clover boot menu to switch to the external display. That way the 
+laptop LVDS screen is switched off and the external monitor is on. You 
+need to connect a USB/Bluetooth mouse and keyboard, but the setup is much 
+more practical in this way.
 
