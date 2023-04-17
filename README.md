@@ -4,10 +4,10 @@
 
 # Details
 
-| OpenCore Version | 0.8.5 |
+| OpenCore Version | 0.9.1 |
 | --- | --- |
-| macOS Version | 12.6.1 (Monterey) |
-| SMSBios | MacBookPro16,4 |
+| macOS Version | 12.6.2 (Monterey) |
+| SMSBios | MacPro7,1 |
 
 # Hardware Specifications
 
@@ -26,14 +26,14 @@
 | Fingerprint Sensor | Shenzen Goodix | 🔶 Partially working |
 | S3 | Sleep/Wake | 🔶 Partially working |
 | GPU | Intel Iris Xe Graphics | ❌ Not Working |
-| eGPU | AMD Sapphire Radeon RX580 | ✅ Working |
+| eGPU | AMD Sapphire Radeon RX6650XT | ✅ Working |
 | Display | 1920 x 1200 FHD LCD | ✅ Working |
 
 # Overview
 
 This is mostly a work in progress. With this latest configuration it is 
 possible to install and run MacOS Monterey without graphics acceleration 
-(yet!) but it will run smoothly with any eGPU (tested with an RX580).
+(yet!) but it will run smoothly with any eGPU (tested with an RX580 and an RX6650XT).
 
 # BIOS Settings
 
