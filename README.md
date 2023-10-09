@@ -4,10 +4,10 @@
 
 # Details
 
-| OpenCore Version | 0.9.1 |
+| OpenCore Version | 0.9.5 |
 | --- | --- |
 | macOS Version | 12.6.2 (Monterey) |
-| SMSBios | MacPro7,1 |
+| SMBios | MacPro7,1 |
 
 # Hardware Specifications
 
