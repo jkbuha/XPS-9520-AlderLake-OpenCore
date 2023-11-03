@@ -1,4 +1,4 @@
-# Dell XPS 9520 macOS Monterey with OpenCore
+# Dell XPS 9520 macOS Ventura with OpenCore
 
 ![hackintosh](./screenshot/screen.jpg)
 
@@ -6,7 +6,7 @@
 
 | OpenCore Version | 0.9.5 |
 | --- | --- |
-| macOS Version | 12.6.2 (Monterey) |
+| macOS Version | 13.6 (Ventura) |
 | SMBios | MacPro7,1 |
 
 # Hardware Specifications
@@ -24,16 +24,15 @@
 | Webcam | Microdia RGB IR HD camera | ✅ Working |
 | MicroSD Card | RTS5260 Card Reader | 🔶 Partially working |
 | Fingerprint Sensor | Shenzen Goodix | 🔶 Partially working |
-| S3 | Sleep/Wake | 🔶 Partially working |
+| S4 | Hibernation | 🔶 In progress |
 | GPU | Intel Iris Xe Graphics | ❌ Not Working |
 | eGPU | AMD Sapphire Radeon RX6650XT | ✅ Working |
 | Display | 1920 x 1200 FHD LCD | ✅ Working |
 
 # Overview
 
-This is mostly a work in progress. With this latest configuration it is 
-possible to install and run MacOS Monterey without graphics acceleration 
-(yet!) but it will run smoothly with any eGPU (tested with an RX580 and an RX6650XT).
+The XPS 9520 (with the 14-core i9 processor) is a solid workhorse. With this latest configuration it is 
+possible to install and run macOS Ventura smoothly with any eGPU (tested with an RX580 and an RX6650XT).
 
 # BIOS Settings
 
@@ -55,9 +54,10 @@ CFG_LOCK using modGRUBshell as follows:
 setup_var_cv CpuSetup 0x43 0x00
 ```
 
-# S3 ACPI
-Despite Dell's attempts to remove S3 from the sleep options, it's possible, in theory at least, to get S3 working using a combination of IFR edits 
-and ACPI table changes. The first step is to re-enable S3 from the UEFI interface using modGRUBshell:
+# S3/S4 ACPI
+Despite Dell's attempts to sabotage S3 sleep, there's an ongoing effort to render hiberation (S4) and then
+sleep (S3) working again on this machine, having successfully enabled it on the XPS 9500. Currently WIP...
+The first step is to re-enable S3 from the UEFI interface using modGRUBshell:
 
 ```bash
 setup_var_cv Setup 0xE 0x01
@@ -70,7 +70,7 @@ are required, and this is currently WIP.
 # Known Issues
 
 - S3 Sleep not working properly yet
-- Wake not working
+- S4 Sleep currently being worked on
 - LVDS display remains off when eGPU connected
 
 To allow the laptop to function in clamshell mode, you need to press Fn+F8 

@@ -34,7 +34,7 @@
                     <key>Comment</key>
                     <string>Adding HPET Device</string>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>Path</key>
                     <string>SSDT-HPET.aml</string>
                 </dict>
@@ -61,6 +61,14 @@
                     <true/>
                     <key>Path</key>
                     <string>SSDT-EC-USBX-LAPTOP.aml</string>
+                </dict>
+                <dict>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>SSDT-HPET_Disable.aml</string>
                 </dict>
                 <dict>
                     <key>Comment</key>
@@ -536,7 +544,7 @@
                 <key>RebaseRegions</key>
                 <false/>
                 <key>ResetHwSig</key>
-                <false/>
+                <true/>
                 <key>ResetLogoStatus</key>
                 <false/>
                 <key>SyncTableIds</key>
@@ -614,6 +622,67 @@
         <dict>
             <key>Add</key>
             <dict>
+                <key>#PciRoot(0x0)/Pci(0x2,0x0)</key>
+                <dict>
+                    <key>#AAPL,ig-platform-id</key>
+                    <data>/wUAAA==</data>
+                    <key>#AAPL00,override-no-connect</key>
+                    <data>AP///////wBNEBUVAAAAAA0fAQSlIhV4Dt5Qo1RMmSYPUFQAAAABAQEBAQEBAQEBAQEBAQEBKDyAoHCwI0AwIDYAUNIQAAAYIDCAoHCwI0AwIDYAUNIQAAAYAAAA/gBEVzdYToFMUTE1Nk4xAAAAAAACQQMyABIAAAoBCiAgANE=</data>
+                    <key>#device-id</key>
+                    <data>AAAF/w==</data>
+                    <key>AAPL,ig-platform-id</key>
+                    <data>CQClPg==</data>
+                    <key>device-id</key>
+                    <data>mz4AAA==</data>
+                    <key>dpcd-max-link-rate</key>
+                    <data>CgAAAA==</data>
+                    <key>enable-backlight-registers-fix</key>
+                    <data>AQAAAA==</data>
+                    <key>enable-dpcd-max-link-rate-fix</key>
+                    <data>AQAAAA==</data>
+                    <key>enable-hdmi20</key>
+                    <data>AQAAAA==</data>
+                    <key>enable-lspcon-support</key>
+                    <data>AQAAAA==</data>
+                    <key>enable-max-pixel-clock-override</key>
+                    <data>AQAAAA==</data>
+                    <key>framebuffer-con1-alldata</key>
+                    <data>AQUJAAAEAACHAQAA</data>
+                    <key>framebuffer-con1-busid</key>
+                    <data>AQAAAA==</data>
+                    <key>framebuffer-con1-enable</key>
+                    <data>AQAAAA==</data>
+                    <key>framebuffer-con1-has-lspcon</key>
+                    <data>AQAAAA==</data>
+                    <key>framebuffer-con1-preferred-lspcon-mode</key>
+                    <data>AQAAAA==</data>
+                    <key>framebuffer-con1-type</key>
+                    <data>AgAAAA==</data>
+                    <key>framebuffer-con2-alldata</key>
+                    <data>AgYJAAAEAACHAQAA</data>
+                    <key>framebuffer-con2-busid</key>
+                    <data>AQAAAA==</data>
+                    <key>framebuffer-con2-enable</key>
+                    <data>AQAAAA==</data>
+                    <key>framebuffer-con2-has-lspcon</key>
+                    <data>AQAAAA==</data>
+                    <key>framebuffer-con2-preferred-lspcon-mode</key>
+                    <data>AQAAAA==</data>
+                    <key>framebuffer-con2-type</key>
+                    <data>AAgAAA==</data>
+                    <key>framebuffer-con3-alldata</key>
+                    <data>AwQKAAAIAACHAQAA</data>
+                    <key>framebuffer-con3-enable</key>
+                    <data>AQAAAA==</data>
+                    <key>framebuffer-con3-has-lspcon</key>
+                    <data>AQAAAA==</data>
+                    <key>framebuffer-patch-enable</key>
+                    <data>AQAAAA==</data>
+                    <key>framebuffer-portcount</key>
+                    <data>BAAAAA==</data>
+                    <key>framebuffer-unifiedmem</key>
+                    <data>AAAAgA==</data>
+                </dict>
                 <key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)</key>
                 <dict>
                     <key>#disable-gpu</key>
@@ -644,18 +713,18 @@
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x2,0x0)</key>
                 <dict>
-                    <key>#AAPL,ig-platform-id</key>
-                    <data>/wUAAA==</data>
-                    <key>#AAPL00,override-no-connect</key>
-                    <data>AP///////wBNEBUVAAAAAA0fAQSlIhV4Dt5Qo1RMmSYPUFQAAAABAQEBAQEBAQEBAQEBAQEBKDyAoHCwI0AwIDYAUNIQAAAYIDCAoHCwI0AwIDYAUNIQAAAYAAAA/gBEVzdYToFMUTE1Nk4xAAAAAAACQQMyABIAAAoBCiAgANE=</data>
-                    <key>#device-id</key>
-                    <data>AAAF/w==</data>
-                    <key>AAPL,ig-platform-id</key>
-                    <data>CQClPg==</data>
-                    <key>device-id</key>
-                    <data>mz4AAA==</data>
-                    <key>dpcd-max-link-rate</key>
+                    <key>#dpcd-max-link-rate</key>
                     <data>CgAAAA==</data>
+                    <key>#framebuffer-portcount</key>
+                    <data>BAAAAA==</data>
+                    <key>#framebuffer-unifiedmem</key>
+                    <data>AAAAgA==</data>
+                    <key>AAPL,ig-platform-id</key>
+                    <data>/wUAAA==</data>
+                    <key>AAPL00,override-no-connect</key>
+                    <data>AP///////wBNEBUVAAAAAA0fAQSlIhV4Dt5Qo1RMmSYPUFQAAAABAQEBAQEBAQEBAQEBAQEBKDyAoHCwI0AwIDYAUNIQAAAYIDCAoHCwI0AwIDYAUNIQAAAYAAAA/gBEVzdYToFMUTE1Nk4xAAAAAAACQQMyABIAAAoBCiAgANE=</data>
+                    <key>device-id</key>
+                    <data>AAAF/w==</data>
                     <key>enable-backlight-registers-fix</key>
                     <data>AQAAAA==</data>
                     <key>enable-dpcd-max-link-rate-fix</key>
@@ -850,24 +919,6 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>AirportItlwm.kext</string>
-                    <key>Comment</key>
-                    <string>V2.2.0 | AirportItlwm.kext</string>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/AirportItlwm</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string>17.0.0</string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
                     <string>itlwm.kext</string>
                     <key>Comment</key>
                     <string>V2.2.0 | itlwm.kext</string>
@@ -965,6 +1016,24 @@
                     <true/>
                     <key>ExecutablePath</key>
                     <string></string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>AirportItlwm.kext</string>
+                    <key>Comment</key>
+                    <string>V2.3.0</string>
+                    <key>Enabled</key>
+                    <false/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/AirportItlwm</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -1376,7 +1445,7 @@
                     <key>Comment</key>
                     <string>V1.3.2 | SMCSuperIO.kext</string>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/SMCSuperIO</string>
                     <key>MaxKernel</key>
@@ -2264,9 +2333,9 @@ agdpmod=pikera -ctrsmt kext-dev-mode=1 -wegswitchgpu -no_compat_check -hbfx-dump
                     <key>backup_boot-args 2</key>
                     <string>-v keepsyms agdpmod=pikera debug=0x100 kext-dev-mode=1 -wegswitchgpu -no_compat_check -rad24 igfxfw=2 wegtree=1 -igfxmlr igfxonln=1</string>
                     <key>boot-args</key>
-                    <string>-v keepsyms=1 agdpmod=pikera -ctrsmt kext-dev-mode=1 -wegswitchgpu -no_compat_check hbfx-ahbm=1 -igfxblr</string>
+                    <string>-v keepsyms agdpmod=pikera -ctrsmt debug=0x100 kext-dev-mode=1 -wegswitchgpu -no_compat_check -rad24 wegtree=1 -igfxmlr igfxfw=2 igfxonln=1 hbfx-ahbm=1 -hbfx-disable-patch-pci -hbfx-dump-nvram</string>
                     <key>csr-active-config</key>
-                    <data>/wcAAA==</data>
+                    <data>bwIAAA==</data>
                     <key>prev-lang:kbd</key>
                     <string>en-US:0</string>
                     <key>run-efi-updater</key>
@@ -2583,7 +2652,7 @@ agdpmod=pikera -ctrsmt kext-dev-mode=1 -wegswitchgpu -no_compat_check -hbfx-dump
                 <key>DisableSecurityPolicy</key>
                 <true/>
                 <key>EnableVectorAcceleration</key>
-                <false/>
+                <true/>
                 <key>EnableVmx</key>
                 <false/>
                 <key>ExitBootServicesDelay</key>
