@@ -24,6 +24,14 @@
                 </dict>
                 <dict>
                     <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>SSDT-PC00-LPCB-Wake-AOAC.aml</string>
+                </dict>
+                <dict>
+                    <key>Comment</key>
                     <string>AC Device</string>
                     <key>Enabled</key>
                     <true/>
@@ -213,6 +221,22 @@
                     <true/>
                     <key>Path</key>
                     <string>SSDT-Fix-Shutdown.aml</string>
+                </dict>
+                <dict>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>SSDT-TB3HotPlug.aml</string>
+                </dict>
+                <dict>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>SSDT-TB3_JHL7540TitanRidge.aml</string>
                 </dict>
             </array>
             <key>Delete</key>
@@ -713,6 +737,8 @@
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x2,0x0)</key>
                 <dict>
+                    <key>#AAPL,ig-platform-id</key>
+                    <data>/wUAAA==</data>
                     <key>#dpcd-max-link-rate</key>
                     <data>CgAAAA==</data>
                     <key>#framebuffer-portcount</key>
@@ -720,7 +746,7 @@
                     <key>#framebuffer-unifiedmem</key>
                     <data>AAAAgA==</data>
                     <key>AAPL,ig-platform-id</key>
-                    <data>/wUAAA==</data>
+                    <data>AQBRig==</data>
                     <key>AAPL00,override-no-connect</key>
                     <data>AP///////wBNEBUVAAAAAA0fAQSlIhV4Dt5Qo1RMmSYPUFQAAAABAQEBAQEBAQEBAQEBAQEBKDyAoHCwI0AwIDYAUNIQAAAYIDCAoHCwI0AwIDYAUNIQAAAYAAAA/gBEVzdYToFMUTE1Nk4xAAAAAAACQQMyABIAAAoBCiAgANE=</data>
                     <key>device-id</key>
@@ -836,24 +862,6 @@
                     <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/VirtualSMC</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>AGPMInjector.kext</string>
-                    <key>Comment</key>
-                    <string>V129 | Lilu.kext</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string></string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -1052,24 +1060,6 @@
                     <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/IntelBluetoothFirmware</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>IntelBluetoothInjector.kext</string>
-                    <key>Comment</key>
-                    <string>V2.3.0 | IntelBluetoothInjector.kext</string>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/IntelBluetoothInjector</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -1441,24 +1431,6 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>SMCSuperIO.kext</string>
-                    <key>Comment</key>
-                    <string>V1.3.2 | SMCSuperIO.kext</string>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/SMCSuperIO</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
                     <string>SMCRadeonGPU.kext</string>
                     <key>Comment</key>
                     <string>V0.3.3 | RadeonMonitor.kext</string>
@@ -1466,24 +1438,6 @@
                     <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/SMCRadeonGPU</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>RadeonSensor.kext</string>
-                    <key>Comment</key>
-                    <string>V0.3.3 | RadeonMonitor.kext</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/RadeonSensor</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -1538,42 +1492,6 @@
                     <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/SMCBatteryManager</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>IntelCPUMonitor.kext</string>
-                    <key>Comment</key>
-                    <string>V1.2.6 | IntelCPUMonitor.kext</string>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/IntelCPUMonitor</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>RTCMemoryFixup.kext</string>
-                    <key>Comment</key>
-                    <string>V1.0.7</string>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/RTCMemoryFixup</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -2331,9 +2249,9 @@ agdpmod=pikera -ctrsmt kext-dev-mode=1 -wegswitchgpu -no_compat_check -hbfx-dump
                     <key>SystemAudioVolume</key>
                     <data>Rg==</data>
                     <key>backup_boot-args 2</key>
-                    <string>-v keepsyms agdpmod=pikera debug=0x100 kext-dev-mode=1 -wegswitchgpu -no_compat_check -rad24 igfxfw=2 wegtree=1 -igfxmlr igfxonln=1</string>
+                    <string>-v keepsyms agdpmod=pikera -ctrsmt debug=0x100 kext-dev-mode=1 -wegswitchgpu -no_compat_check -rad24 wegtree=1 -igfxmlr igfxfw=2 -noDC9 igfxonln=1 hbfx-ahbm=1 revpatch=sbvmm</string>
                     <key>boot-args</key>
-                    <string>-v keepsyms agdpmod=pikera -ctrsmt debug=0x100 kext-dev-mode=1 -wegswitchgpu -no_compat_check -rad24 wegtree=1 -igfxmlr igfxfw=2 igfxonln=1 hbfx-ahbm=1 -hbfx-disable-patch-pci -hbfx-dump-nvram</string>
+                    <string>-v keepsyms agdpmod=pikera -ctrsmt debug=0x100 kext-dev-mode=1 -wegswitchgpu -no_compat_check igfxonln=1 hbfx-ahbm=1 revpatch=sbvmm</string>
                     <key>csr-active-config</key>
                     <data>bwIAAA==</data>
                     <key>prev-lang:kbd</key>
