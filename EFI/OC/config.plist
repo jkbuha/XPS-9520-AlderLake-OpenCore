@@ -40,14 +40,6 @@
                 </dict>
                 <dict>
                     <key>Comment</key>
-                    <string>Adding HPET Device</string>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>Path</key>
-                    <string>SSDT-HPET.aml</string>
-                </dict>
-                <dict>
-                    <key>Comment</key>
                     <string>Fixing RTC Memory for (8+ gens)</string>
                     <key>Enabled</key>
                     <true/>
@@ -192,27 +184,11 @@
                 </dict>
                 <dict>
                     <key>Comment</key>
-                    <string>SSDT-XOSI.aml</string>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>Path</key>
-                    <string>SSDT-XOSI.aml</string>
-                </dict>
-                <dict>
-                    <key>Comment</key>
                     <string>SSDT-XSPI.aml</string>
                     <key>Enabled</key>
                     <true/>
                     <key>Path</key>
                     <string>SSDT-XSPI.aml</string>
-                </dict>
-                <dict>
-                    <key>Comment</key>
-                    <string>USB Wakeup</string>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>Path</key>
-                    <string>SSDT-USBW.aml</string>
                 </dict>
                 <dict>
                     <key>Comment</key>
@@ -616,6 +592,8 @@
                 <true/>
                 <key>EnableWriteUnprotector</key>
                 <false/>
+                <key>FixupAppleEfiImages</key>
+                <false/>
                 <key>ForceBooterSignature</key>
                 <true/>
                 <key>ForceExitBootServices</key>
@@ -839,7 +817,7 @@
                     <key>BundlePath</key>
                     <string>Lilu.kext</string>
                     <key>Comment</key>
-                    <string>V1.6.7 | Lilu.kext</string>
+                    <string>V1.6.8 | Lilu.kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -857,7 +835,7 @@
                     <key>BundlePath</key>
                     <string>VirtualSMC.kext</string>
                     <key>Comment</key>
-                    <string>V1.3.2</string>
+                    <string>V1.3.3</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -875,7 +853,7 @@
                     <key>BundlePath</key>
                     <string>AppleALC.kext</string>
                     <key>Comment</key>
-                    <string>V1.8.6 | AppleALC.kext</string>
+                    <string>V1.9.0 | AppleALC.kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -893,7 +871,7 @@
                     <key>BundlePath</key>
                     <string>WhateverGreen.kext</string>
                     <key>Comment</key>
-                    <string>V1.6.6 | WhateverGreen.kext</string>
+                    <string>V1.6.7 | WhateverGreen.kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -911,7 +889,7 @@
                     <key>BundlePath</key>
                     <string>BrightnessKeys.kext</string>
                     <key>Comment</key>
-                    <string>V1.0.3</string>
+                    <string>V1.0.4</string>
                     <key>Enabled</key>
                     <false/>
                     <key>ExecutablePath</key>
@@ -947,7 +925,7 @@
                     <key>BundlePath</key>
                     <string>ECEnabler.kext</string>
                     <key>Comment</key>
-                    <string>V1.0.4</string>
+                    <string>V1.0.5</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -983,7 +961,7 @@
                     <key>BundlePath</key>
                     <string>CPUFriend.kext</string>
                     <key>Comment</key>
-                    <string>V1.2.7 | CPUFriend.kext</string>
+                    <string>V1.2.8 | CPUFriend.kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -1055,7 +1033,7 @@
                     <key>BundlePath</key>
                     <string>IntelBluetoothFirmware.kext</string>
                     <key>Comment</key>
-                    <string>V2.3.0 | IntelBluetoothFirmware.kext</string>
+                    <string>V2.5.0 | IntelBluetoothFirmware.kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -1073,7 +1051,7 @@
                     <key>BundlePath</key>
                     <string>IntelBTPatcher.kext</string>
                     <key>Comment</key>
-                    <string>V2.3.0</string>
+                    <string>V2.5.0</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -1109,7 +1087,7 @@
                     <key>BundlePath</key>
                     <string>HibernationFixup.kext</string>
                     <key>Comment</key>
-                    <string>V1.4.9 | HibernationFixup.kext</string>
+                    <string>V1.5.0 | HibernationFixup.kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -1127,7 +1105,7 @@
                     <key>BundlePath</key>
                     <string>NoTouchID.kext</string>
                     <key>Comment</key>
-                    <string>V1.0.3 | NoTouchID.kext</string>
+                    <string>V1.0.4 | NoTouchID.kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -1181,7 +1159,7 @@
                     <key>BundlePath</key>
                     <string>DebugEnhancer.kext</string>
                     <key>Comment</key>
-                    <string>V1.0.8</string>
+                    <string>V1.0.9</string>
                     <key>Enabled</key>
                     <false/>
                     <key>ExecutablePath</key>
@@ -1217,7 +1195,7 @@
                     <key>BundlePath</key>
                     <string>RestrictEvents.kext</string>
                     <key>Comment</key>
-                    <string>V1.1.3</string>
+                    <string>V1.1.4</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -1343,7 +1321,7 @@
                     <key>BundlePath</key>
                     <string>VoodooPS2Controller.kext</string>
                     <key>Comment</key>
-                    <string>V2.3.5</string>
+                    <string>V2.3.6</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -1361,7 +1339,7 @@
                     <key>BundlePath</key>
                     <string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Keyboard.kext</string>
                     <key>Comment</key>
-                    <string>V2.3.5</string>
+                    <string>V2.3.6</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -1379,7 +1357,7 @@
                     <key>BundlePath</key>
                     <string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Mouse.kext</string>
                     <key>Comment</key>
-                    <string>V2.3.5</string>
+                    <string>V2.3.6</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -1397,7 +1375,7 @@
                     <key>BundlePath</key>
                     <string>VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext</string>
                     <key>Comment</key>
-                    <string>V2.3.5</string>
+                    <string>V2.3.6</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -1415,7 +1393,7 @@
                     <key>BundlePath</key>
                     <string>SMCLightSensor.kext</string>
                     <key>Comment</key>
-                    <string>V1.3.2 | SMCLightSensor.kext</string>
+                    <string>V1.3.3 | SMCLightSensor.kext</string>
                     <key>Enabled</key>
                     <false/>
                     <key>ExecutablePath</key>
@@ -1451,7 +1429,7 @@
                     <key>BundlePath</key>
                     <string>SMCProcessor.kext</string>
                     <key>Comment</key>
-                    <string>V1.3.2 | SMCProcessor.kext</string>
+                    <string>V1.3.3 | SMCProcessor.kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -1469,7 +1447,7 @@
                     <key>BundlePath</key>
                     <string>SMCDellSensors.kext</string>
                     <key>Comment</key>
-                    <string>V1.3.2 | SMCDellSensors.kext</string>
+                    <string>V1.3.3 | SMCDellSensors.kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -1487,7 +1465,7 @@
                     <key>BundlePath</key>
                     <string>SMCBatteryManager.kext</string>
                     <key>Comment</key>
-                    <string>V1.3.2 | SMCBatteryManager.kext</string>
+                    <string>V1.3.3 | SMCBatteryManager.kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -2462,6 +2440,18 @@ agdpmod=pikera -ctrsmt kext-dev-mode=1 -wegswitchgpu -no_compat_check -hbfx-dump
                     <false/>
                     <key>Path</key>
                     <string>ext4_x64.efi</string>
+                </dict>
+                <dict>
+                    <key>Arguments</key>
+                    <string></string>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <false/>
+                    <key>LoadEarly</key>
+                    <false/>
+                    <key>Path</key>
+                    <string>OpenCanopy.efi</string>
                 </dict>
             </array>
             <key>Input</key>
