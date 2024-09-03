@@ -4,10 +4,10 @@
 
 # Details
 
-| OpenCore Version | 1.0.0 |
+| OpenCore Version | 1.0.1 |
 | --- | --- |
-| macOS Version | 13.6.7 (Ventura) |
-| SMBios | MacPro7,1 |
+| macOS Version | 13.6.9 (Ventura) |
+| SMBios | MacBookAir9,1 |
 
 # Hardware Specifications
 
@@ -23,10 +23,10 @@
 | Trackpad | I2C Connection | ✅ Working |
 | Webcam | Microdia RGB IR HD camera | ✅ Working |
 | MicroSD Card | RTS5260 Card Reader | 🔶 Partially working |
-| Fingerprint Sensor | Shenzen Goodix | 🔶 Partially working |
+| Fingerprint Sensor | Shenzen Goodix | ❌ Not Working |
 | S4 | Hibernation | 🔶 In progress |
 | GPU | Intel Iris Xe Graphics | ❌ Not Working |
-| eGPU | AMD Sapphire Radeon RX6650XT | ✅ Working |
+| eGPU | AMD Sapphire Radeon RX6950XT | ✅ Working |
 | Display | 1920 x 1200 FHD LCD | ✅ Working |
 
 # Overview
